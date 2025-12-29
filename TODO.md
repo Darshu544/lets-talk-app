@@ -1,0 +1,5 @@
+- [x] Update app/(auth)/login/[[...login]]/page.tsx to add routing="virtual" to <SignIn />
+- [x] Update app/(auth)/register/[[...register]]/page.tsx to add routing="virtual" to <SignUp />
+- [x] Test the app to ensure sign-in and sign-up pages render when signed in
+- [x] Set up Stream API keys in .env.local to resolve "Stream API key is missing" error
+- [x] Add NEXT_PUBLIC_BASE_URL to .env.local to fix meeting link construction
