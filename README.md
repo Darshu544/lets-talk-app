@@ -1,36 +1,191 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 📞 Let’s Talk – Real-Time Video Conferencing App (Zoom Clone)
 
-First, run the development server:
+**Let’s Talk** is a modern, full-featured **Zoom-like video conferencing platform** built with **Next.js, TypeScript, and Tailwind CSS**.
+It supports **real-time meetings, scheduling, chat, emoji reactions, screen sharing, and meeting recording with stored playback**, offering a complete virtual meeting experience.
+
+---
+
+## 🚀 Key Highlights
+
+* Zoom-style **dashboard UI**
+* **Meeting recordings are stored and accessible**
+* Real-time joining & scheduling
+* Secure authentication with Clerk
+* Clean, production-ready UI designed using Figma
+
+---
+
+## ✨ Features
+
+### 🎥 Video Conferencing
+
+* Real-time **audio & video meetings**
+* High-performance peer connections
+* Join meetings instantly via links
+
+### 🖥 Screen & Media
+
+* **Screen sharing during meetings**
+* **Meeting recording**
+* Recordings stored & listed in **Recordings section**
+* Playback support for recorded meetings
+
+### 💬 Chat & Interaction
+
+* Real-time in-meeting chat
+* Emoji reactions
+* Participant join/leave updates
+
+### 📅 Meeting Management
+
+* Create **new meetings**
+* **Schedule meetings** for later
+* View **upcoming & previous meetings**
+* Dedicated **recordings dashboard**
+
+### 🔐 Authentication
+
+* Secure login & signup using **Clerk**
+* Protected routes & user sessions
+* User profile & account management
+
+### 🎨 UI / UX
+
+* Zoom-inspired clean interface
+* Built with **Tailwind CSS**
+* UI/UX designed using **Figma**
+* Fully responsive layout
+
+---
+
+## 🧱 Tech Stack
+
+| Category       | Technology           |
+| -------------- | -------------------- |
+| Framework      | Next.js              |
+| Language       | TypeScript           |
+| Styling        | Tailwind CSS         |
+| Authentication | Clerk                |
+| Real-Time      | WebRTC, Socket.IO    |
+| UI Design      | Figma                |
+| Deployment     | Vercel (recommended) |
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+lets-talk-app/
+├── public/                    # Static assets
+├── src/
+│   ├── app/                  # Next.js App Router
+│   ├── components/           # Reusable UI components
+│   ├── hooks/                # Custom hooks
+│   ├── context/              # Global state & sockets
+│   ├── utils/                # Helper functions
+│   └── styles/               # Global & Tailwind styles
+├── .env.local
+├── next.config.js
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## ⚙ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Darshu544/lets-talk-app.git
+cd lets-talk-app
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Environment Variables
+
+Create `.env.local` file:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_secret
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
+
+---
+
+### 4️⃣ Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open 👉 **[http://localhost:3000](http://localhost:3000)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 How It Works
 
-## Learn More
+1. User authenticates via **Clerk**
+2. Creates or joins a meeting
+3. WebRTC establishes peer connections
+4. Socket.IO handles real-time events
+5. Media streams enable video, audio & screen sharing
+6. Meeting recordings are stored and shown in dashboard
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Application Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Home Dashboard** – Quick actions & current time
+* **Upcoming Meetings** – Scheduled meetings list
+* **Previous Meetings** – Meeting history
+* **Recordings** – Stored meeting recordings
+* **Profile Menu** – Account & sign-out options
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Optimized for **Vercel**:
+
+```bash
+vercel deploy
+```
+
+---
+
+## 🔮 Future Enhancements
+
+* Cloud recording download
+* Admin host controls
+* Breakout rooms
+* Virtual backgrounds
+* End-to-end encryption
+* Mobile app support
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👨‍💻 Author
+
+**Darshan Memane**
+GitHub: [https://github.com/Darshu544](https://github.com/Darshu544)
+
+Just say the word 🚀
